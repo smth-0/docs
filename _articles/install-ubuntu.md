@@ -50,7 +50,7 @@ Once you have the disk made, reboot your system. You'll need to tell the compute
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+Hold <kbd>F7</kbd>/<kbd>F2</kbd> or <kbd>F1</kbd> for older laptops | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
 
 ---
 
