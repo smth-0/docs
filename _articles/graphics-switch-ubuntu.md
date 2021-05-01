@@ -2,16 +2,16 @@
 layout: article
 title: Switching Graphics in Ubuntu
 description: >
-   How to switch between integrated, NVIDIA, and Hybrid graphics
+   How to switch between integrated, NVIDIA, Hybrid, Compute graphics
 keywords:
   - System76
   - Ubuntu
   - 18.04
-  - 19.10
   - 20.04
   - NVIDIA
   - Hybrid
   - Integrated
+  - Compute
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
 section: ubuntu
@@ -20,10 +20,10 @@ section: ubuntu
 
 The following laptops have switchable graphics:
 
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+- Adder WS (addw1, addw2)
+- Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15)
-- Adder Workstation (addw1, addw2)
-- Galago (galp5 with NVIDIA GPU)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
 
 ### Graphics modes
 
@@ -46,13 +46,13 @@ Hybrid graphics mode uses both the integrated GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
 
-Vulkan applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
+Vulkan applications must be launched with this command to be rendered on the dGPU (NVIDIA):
 
 ```
 __NV_PRIME_RENDER_OFFLOAD=1 <application>
 ```
 
-GLX applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
+GLX applications must be launched with this command to be rendered on the dGPU (NVIDIA):
 
 ```
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
@@ -69,23 +69,6 @@ GPU is left available, allowing it to be used as a compute node.
 
 Pop!_OS by System76 includes the system76-power package, which includes the
 ability to switch between integrated, NVIDIA, and hybrid graphics modes.
-
-You'll only need to install this software manually if you did a fresh install of Ubuntu,
-as our installations will include these packages by default. You can do this
-with the following commands:
-
-```
-sudo apt-add-repository ppa:system76-dev/stable
-sudo apt install gnome-shell-extension-system76-power system76-power
-```
-
-Then we need to load the extension with this command:
-
-```
-gnome-shell-extension-prefs
-```
-
-Now enable the System76 Power extension with the toggle to the right.
 
 #### From GNOME Desktop
 
@@ -113,13 +96,13 @@ For seeing which graphics mode the system is using:
 sudo system76-power graphics
 ```
 
-For switching to NVIDIA Graphics:
+For switching to NVIDIA graphics:
 
 ```
 sudo system76-power graphics nvidia
 ```
 
-For switching to integrated Graphics:
+For switching to integrated graphics:
 
 ```
 sudo system76-power graphics integrated

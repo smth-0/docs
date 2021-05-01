@@ -2,16 +2,16 @@
 layout: article
 title: Switching Graphics in Pop!_OS
 description: >
-   How to switch between integrated, NVIDIA, and Hybrid graphics
+   How to switch between integrated, NVIDIA, Hybrid and Compute graphics
 keywords:
   - System76
   - Pop
   - 18.04
-  - 19.10
   - 20.04
   - NVIDIA
   - Hybrid
   - Integrated
+  - Compute
 image: http://support.system76.com/images/pop.png
 hidden: false
 section: pop
@@ -23,7 +23,7 @@ The following laptops have switchable graphics:
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7)
 
 ### Graphics modes
 
