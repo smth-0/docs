@@ -253,3 +253,14 @@ If the system boots into a `BusyBox` environment, try `exit` to show potential f
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.
 
 Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS. 
+
+### systemd-boot key combos
+When booting and holding the Spacebar to access systemd-boot there are key combos like the following:
+
+Key | Action
+<kbd>d</kbd> | Setting the highlighted item as the default boot target
+<kbd>e</kbd> | Editing the kernel option
+<kbd>+, t</kbd> | Increase the timeout for the default boot target is booted
+<kbd>-, T</kbd> | Decrease the timeout for the default boot target is booted
+<kbd>h</kbd> | Show the help menu at the bottom of the screen
+
