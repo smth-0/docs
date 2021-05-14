@@ -15,3 +15,8 @@ section: getting-started
 
 ---
 
+![Keyboard Configurator Main Window]()
+
+![Keyboard Configurator LEDs Window]()
+
+![Keyboard Configurator Remapping Window]()
