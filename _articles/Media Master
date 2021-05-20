@@ -1,0 +1,33 @@
+---
+layout: article
+title: Media Production
+description: >
+Installing and learning
+keywords:
+- System76
+- apt
+image:
+hidden: true
+section: pop
+---
+
+# Media Production
+Adobe is the giant in the industry, if you need to use their software for work WINE and Lutrus has your back.  With Adobe updating their software so often we do not have instructions on how to install them using these methods.
+## 3D
+3D on Linux is well supported through Blender.  Blender can do a lot of things, but is a great place to start your 3D adventure! [Blender](https://www.blender.org)
+```
+sudo apt update
+sudo apt install blender
+```
+## 2D
+### Photography
+Photo Library ManagerLinux out of the box supports most photo formats out of the bat! Some cameras support RAW formats, most OS will not support opening the file natively.  RAWs are like digital negatives that need to developed.  Here are a few of the RAW processors we recommend.
+Photo Library Manager
+- [Filmulator](https://filmulator.org/download/)
+- Digikam
+- Darktable
+### Photo Editor
+- Glimpse Editor
+### Video Production
+### Livestreaming
+### Graphic Design
